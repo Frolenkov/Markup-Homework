@@ -1,0 +1,187 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+html, body {
+    height: 100%;
+    font-family:Arial;
+}
+*{
+    box-sizing:border-box;
+}
+.wrapper{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    min-height:100%;
+}
+.nav ul{
+    list-style:none;
+    display:flex;
+}
+.nav li{
+    margin:0 10px 0 0
+}
+a{
+    color:black;
+    text-decoration:none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background: #B8860B;
+    align-items: center;
+    padding: 10px;
+}
+main{
+    flex-grow:1;
+    display:flex;
+    justify-content:space-between;
+     }
+.container{
+   
+}
+.main-side{
+    flex-grow:2;
+}
+aside{
+    flex:1 0 210px;
+    text-align:center;
+    padding:10px;
+}
+.aside1 {
+    background: #DA70D6;
+    }
+.aside2 {
+    background: #4682B4;
+}
+footer {
+    text-align: center;
+    background: #00FF7F;
+    padding:10px 0;
+}
+.container h1{
+    text-transform:uppercase;
+    font-size:20px;
+    font-weight:600;
+    text-align:center;
+    margin:0 0 20px 0;
+}
+.container p {
+   text-align:center;
+   font-size:12px;
+   margin:20px;
+}
+.card-holder {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:stretch;
+}
+.card {
+    margin: 5px;
+    flex: 1 0 calc(100%/3 - 10px);
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    min-height: 200px;
+    transition: all 0.5s linear;
+    position:relative;
+}
+.card img{
+    height:50px;
+    width:auto;
+    border:5px solid pink;
+    border-radius:100%;    
+}
+.card h3{
+    font-size:12px;
+    font-weight:600;
+}
+.card p{
+    font-size:10px;
+}
+.card a {
+        height:20px;
+        width: 30px;
+        background: #C71585;
+        color:white;
+        font-size:10px;
+        border-radius:5px;
+        padding:5px;
+        display:block;
+        text-align:center;
+        
+    }
+.card:hover{
+    transform:rotate(360deg);
+}
+    .card:hover:after {
+        content: "Lick my shiny metall ass";
+        overflow: hidden;
+        opacity: 1;
+            
+    }
+    .card:hover h3 {
+        display:none;
+    }
+    .card:after {
+        content: "Kiss my shiny metall ass";
+        overflow: visible;
+        opacity: 0;
+        position: absolute;
+        top: 60px;
+        left: 10px;
+        color: red;
+        font-weight: 800;
+        text-align: center;
+    }
