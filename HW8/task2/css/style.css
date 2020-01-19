@@ -97,6 +97,7 @@ aside{
 }
 .aside1 {
     background: #DA70D6;
+     order:-1;
     }
 .aside2 {
     background: #4682B4;
