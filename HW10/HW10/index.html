@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>HW10</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>  
+    <div class="task1">
+       <form action="#">
+           <fieldset>
+            <legend>Контакная информация</legend>
+            <div class="form-box">
+                <div class="form-row">
+                    <label for="name" class="label">Имя*</label>
+                    <div class="input-box">
+                     <input type="text" id="name">
+                    </div>                   
+                </div>
+                <div class="form-row">               
+                    <label for="email" class="label">E-mail</label>
+                    <div class="input-box">
+                     <input type="email" id="email">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="tel" class="label">Телефон</label>
+                    <div class="input-box">
+                     <input type="tel" id="tel">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="country" class="label">Страна</label>
+                    <select name="country" id="country">
+                        <option value="1">Canada</option>
+                        <option value="2">Cuba</option>
+                        <option value="3">USA</option>
+                        <option value="4">Peru</option>
+                    </select>
+                </div>   
+                <div class="form-row">
+                    <label for="text" class="label">Коментарий</label>
+                    <div class="text-box">
+                        <textarea name="text" id="text"></textarea>
+                    </div>
+                </div>                   
+                <div class="form-row">
+                    <label class="label">Прием пищи</label>
+                    <div class="input-box">       
+                        <input type="checkbox" id="check1" class="checkbox">
+                        <label for="check1" class="check-label">Завтрак</label>
+                        <input type="checkbox" id="check2" class="checkbox">
+                        <label for="check2" class="check-label">Обед</label> 
+                        <input type="checkbox" id="check3" class="checkbox">
+                        <label for="check3" class="check-label">Ужин</label> 
+                    </div>                        
+                </div>
+            </div>
+           </fieldset>
+           <button type="submit" class="submit-btn">Отправить</button>
+       </form>
+   </div>   
+</body>
+</html>
