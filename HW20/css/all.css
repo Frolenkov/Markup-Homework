@@ -106,12 +106,28 @@ p {
     -ms-align-items: center;
     align-items: center;
     text-decoration: none;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
 }
 
-.social-list a:hover {
-    color: #DC143C;
-   }
+
+.icon-envelope:hover {
+ color: #DC143C;
+}
+.icon-twitter:hover {
+  color: #4512AE;
+}
+.icon-google:hover {
+  color: #92EB01;
+}
+.icon-social-facebook:hover {
+  color: #019999;
+}
+
+
+
+
+
+
 
 @keyframes bounce {
     0% {
